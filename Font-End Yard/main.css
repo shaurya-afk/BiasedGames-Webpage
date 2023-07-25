@@ -1,0 +1,211 @@
+html{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*,*:before,*:after{
+	box-sizing: inherit;
+}
+
+/* Font Styles */
+h2{
+	font-family: 'Caveat', cursive;
+	font-family: 'DotGothic16', sans-serif;
+}
+p{
+	font-family: 'Caveat', cursive;
+	font-size: larger;
+}
+
+/* Main Body */
+body{
+	background-color: #004D99;
+}
+/* ------------------------------------------------------------------- */
+/* NavBar */
+.navbar{
+	display: inline-block;
+	justify-content: center;
+	background-color: #004D99;
+	padding: 10px 32px;
+	border-radius: 20px;
+}
+.navbar h2{
+	left: 0;
+	top: 0;
+	position: relative;
+}
+h2 > a{
+	text-decoration: none;
+	color: black;
+	padding: 15px 32px;
+	border-radius: 20px;
+	margin-top: 50px;
+}
+.navbar ul{
+	display: flex;
+	list-style-type: none;
+	margin-left: 150px;
+	margin-top: -65px;
+	padding: px;
+	overflow: visible;
+	align-items: center;
+	font-size: large;
+	justify-content: center;
+}
+li{
+	padding: 10px;
+	border: 10px black;
+}
+button{
+	border: none;
+	text-align: center;
+	display: inline;
+	text-decoration: none;
+	padding: 5px 32px;
+	color: black;
+	font-family: 'DotGothic16', sans-serif;
+	background-color: #004D99;
+	transition: background-color 150ms;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+	border-radius: 20px;
+}
+button:hover{
+	background-color: #FFD700;
+	color: black;
+	border-radius: 20px;
+}
+li a{
+	display: flex;
+	text-align: center;
+	padding: 15px 32px;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	font-size: larger;
+	font-family: 'DotGothic16', sans-serif;
+	transition: background-color 150ms;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+	border-radius: 20px;
+
+}
+a:hover{
+	background-color:  #FFD700;
+	border-radius: 20px;
+	color: black;
+}
+.about-content li{
+	list-style-type: none;
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-weight: 600;
+	justify-content: right;
+	background-color: #004D99;
+}
+/* ------------------------------------------------------------------- */
+/* Search Box */
+input{
+	float: left;
+	display: block;
+	text-align: left;
+	padding: 10px 20px;
+	font-size: 17px;
+	margin-top: 15px;
+	margin-left: 150px;
+	border-radius: 20px;
+	font-size: large;
+	font-family: 'DotGothic16', sans-serif;
+	font-weight: 700;
+}
+input:hover{
+	background-color: #EFEFEF;
+	color: rgb(0, 0, 0);
+}
+/* ------------------------------------------------------------------- */
+/* DropDown Menu */
+.dropdown{
+	position: relative;
+}
+.dropdown-menu{
+	position: absolute;
+	left: 20px;
+	top: 85px;
+	width: 300px;
+	background-color:  #EFEFEF;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+	transform: translateY(-10px);
+	justify-content: space-between;
+}
+.contact{
+	position: absolute;
+	left: 175px;
+	top: 85px;
+	width: 200px;
+	background-color:  #EFEFEF;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+	transform: translateY(-10px);
+	justify-content: space-between;
+
+}
+
+.dropdown > .link:focus + .dropdown-menu{
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
+}
+/* ------------------------------------------------------------------- */
+/* Main Content */
+.content-wrap{
+	text-align: center;
+	font-weight: 700;
+	background-color: #FFFFFF;
+	padding: 60px 0;
+	color: #333333;
+}
+.content-wrap h3{
+	font-family: 'DotGothic16', sans-serif;
+	font-weight: 700;
+	font-size: large;
+	display: block;
+	text-align: left;
+	margin-left: 25px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+	border-radius: 20px;
+	padding: 7px 12px;
+	display: inline;
+	transition: background-color 150ms ease-in-out;
+	margin-top: 20px;
+}
+.content-wrap p{
+	padding-bottom: 20px;
+	border-bottom: dotted;
+}
+.content-wrap h2{
+	text-decoration: underline;
+}
+.content-wrap h3:hover{
+	background-color: #004D99;
+}
+.projects .content-wrap{
+	background-color: #EFEFEF;
+}
+.choose_biased .content-wrap{
+	background-color: #EFEFEF;
+	color: #333333;
+}
+.content-wrap li{
+	font-family: 'Caveat', cursive;
+	text-align: left;
+	font-size: large;
+}
